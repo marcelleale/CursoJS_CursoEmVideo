@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ex.003 - FUNÇÕES</title>
+</head>
+<body>
+    
+    <script>
+
+        //CALCULANDO FATORIAL
+
+        //5! = 5 * 4 * 3 * 2 * 1 
+
+        function fatorial(n) {
+            let fat = 1;
+
+            for(let c= n; c > 1; c--){
+                fat *= c
+            }
+
+            return fat;
+
+            // console.log(fat);
+
+        }
+
+        console.log(fatorial(5));
+
+            
+        //RECURSÃO - QUANDO UMA FUNÇÃO CHAMA ELA MESMA. 
+
+        //5! = 5 * 4 * 3 * 2 * 1 
+        //5! = 5 * 4!
+        // n = n * (n-1)!
+        // 1! = 1
+        
+        function fatorial1(n) {
+
+            if (n == 1) {
+                return 1
+            
+            } else {
+                return n * fatorial1(n-1);
+
+            }
+        }
+
+        console.log(fatorial1(5));
+
+
+    </script>
+</body>
+</html>

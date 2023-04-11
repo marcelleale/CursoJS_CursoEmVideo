@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercício 2</title>
+
+    <style>
+        body {
+            background-color: rgb(50, 50, 88);
+            color: white;
+            font: normal 16pt Arial; /*Comentário em CSS*/
+        }
+        p {
+            font: normal 10pt Arial;
+            align-content: justify;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Hello, World!</h1> <!-- Comentário em HTML -->
+    <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam maiores aliquid nesciunt suscipit sapiente repellendus libero quos molestiae dolores reprehenderit maxime cum quasi et enim, dolorum rem iste natus ipsa.</p>
+
+    <script>
+        // window.alert('Primeira mensagem');  
+        // window.confirm('Está gostando de JS?');
+        var nome = window.prompt('Qual é o seu nome?'); 
+        alert("É um prazer em te conhecer, " + nome);
+
+        var n1 = Number.parseInt(window.prompt("Digite um número"));
+        var n2 = Number(window.prompt("Digite outro número"));
+        var soma = n1 + n2 //concatenação, o resultado será n1n2;
+            //para realizar a soma é necessário declarar que as variáveis são do tipo number;
+            //(number + number) para adiação;
+            //(string + string) para concatenação;
+            //Number.parseInt(n) || Number.parseFloat(n) - converte de string para número inteiro ou real.
+
+        window.alert("A soma dos valores é " + soma );
+
+        //convertendo de number para string:
+        //window.alert("A soma dos valores é " + String(soma));
+
+        /* Template Strings 
+        Utilizar crase para abrir e fechar a string e ao invés de concatenar utilizando o +, o código consegue ficar mais limpo utilizando ${variável}
+
+         `A soma é ${soma}`;
+        */
+
+    </script> 
+
+</body>
+
+</html>

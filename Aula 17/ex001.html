@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Declaração de Arrays</title>
+</head>
+<body>
+
+    <script>
+
+
+        // Declarar um Array: 
+
+        // let num = [  ,  ,  ]
+
+        // O array no JavaScript é heterogêneo, ele aceita valores de tipos diferentes; 
+        
+        // let dados = [nome,endereco,idade]
+
+        // O que é um objeto?
+        
+        // Declarar um objeto:
+
+        // let amigo = {nome:'José',sexo:'M', peso:'85.4', engordar(p){}}
+
+        // nome, sexo, peso são atributos do objeto.
+        // Além de valores (variáveis), objetos também podem guardar funcionalidades, que são os métodos.
+
+        // No JavaScript, Array e Object são estruturas da mesma classe, por isso os dois são do tipo object.
+
+
+        let amigo = {nome: 'José',
+        sexo: 'M',
+        peso: 85.4,
+        engordar(p=0){
+            console.log('Engordou');
+            this.peso += p;
+        
+        }}
+
+        amigo.engordar(2);
+        console.log(`${amigo.nome} pesa ${amigo.peso} kg.`)
+
+    </script>
+    
+</body>
+</html>

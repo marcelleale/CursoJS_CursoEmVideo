@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interagindo com partes do HTML (DOM)</title>
+
+    <style>
+        button {
+          border-style: 2px;
+          border-color: purple;
+          background-color: greenyellow;
+          height: 50px;
+          width: 300px;  
+          font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        }
+
+        p{
+            color: darkslategray;
+            font: normal 16pt 'Trebuchet MS';
+        }
+
+        h1{
+            font: normal 20pt 'Trebuchet MS';
+        }
+
+    </style>
+</head>
+
+<body>
+
+    <h1> Interagindo com o DOM </h1>
+
+    <button onclick="comecar()"> Clique para começar </button>
+
+    <p id="paragrafo">
+        Aqui vai aparecer o resultado...
+    </p>
+
+    <script>
+
+        function comecar()
+        {
+           let nome = prompt('Qual seu nome?');
+           let resposta = document.getElementById('paragrafo');
+
+            resposta.innerHTML = "Que bom ter você aqui, " + nome + "!";
+        }
+
+
+
+    </script>
+
+
+</body>
+</html>

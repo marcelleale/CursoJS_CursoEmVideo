@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercício 1</title>
+</head>
+<body>
+
+    <script>
+
+        /* Operadores Aritiméticos
+        
+        5 + 2 = 7;
+        5 - 2 = 3;
+        5 * 2 = 10;
+        5 / 2 = 2.5;
+        5 % 2 = 1 (mod - resto da divisão);
+        5 ** 2 = 25 (potência - ao quadrado);
+
+        Atenção a precedência de operadores! 
+        
+        */
+
+        let soma = 5 + 2;
+        console.log('5 + 2 = ' +soma); //resultado correto: 7
+
+        let conta1 = 5 + 3 / 2;
+        console.log('5 + 3 / 2 = ' +conta1); //resultado correto: 6.5
+
+        let conta2 = (5 + 3) / 2;
+        console.log('(5 + 3) / 2 = ' + conta2); //resultado correto: 4
+
+        /* Ordem de precedência é: 
+          
+          |  ()
+          |  **
+          |  * / % : lidos da esquerda para a direita.
+          |  + - 
+          v
+                
+        */
+
+        var a = 5 + 3;
+        console.log('a = '+ a);
+        var b = a % 5;
+        console.log('b = '+ b);
+        var c = 5 * b ** 2;
+        console.log('c = '+ c);
+        var d = 10 - a / 2;
+        console.log('d = '+ d);
+        var e = 6 * 2 / d;
+        console.log('e = '+ e);
+        var f = b % e + 4 / e; //1 - b%e; 2 - 4/e; 1 + 2;
+        console.log('f = '+ f);
+
+        console.log('---------------------------------------------------');
+
+        var n = 3;
+        console.log(n);
+        n = n + 4;
+        console.log(n);
+        n += 4 //é igual a n = n + 4;
+        n -= 5 //é igual a n = n - 5;
+        n *= 4 //é igual a n = n * 4;
+        n /= 2 //é igual a n = n / 2;
+        n **= 2 //é igual a n = 
+    </script>
+    
+</body>
+</html>

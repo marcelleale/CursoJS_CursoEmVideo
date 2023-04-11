@@ -1,0 +1,30 @@
+body {
+    
+    background: #43a9e4cb;
+   
+}
+
+section {
+    background: white;
+    border-radius: 20px;
+    padding: 15px;
+    width: 500px;
+    margin: auto;
+    font: 15pt Arial;
+    box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.61);
+       
+}
+
+header {
+    color: rgb(6, 10, 68);
+    text-align: center;
+    font: 15pt Arial;
+}
+
+footer {
+    color: whitesmoke;
+    text-align: center;
+    font-style: italic;
+    font: 10pt;
+    font-family: Arial;
+}

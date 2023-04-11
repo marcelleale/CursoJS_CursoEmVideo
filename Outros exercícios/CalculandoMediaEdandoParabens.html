@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculando média e dando 'Parabéns'</title>
+</head>
+<body>
+    
+    <h1> Calculando Média</h1>
+
+   
+    <p><strong>Nota 1</strong>
+    <input type="text" id="nota1">
+    </p>
+    <p><strong>Nota 2</strong>
+    <input type="text" id="nota2">
+    </p>
+
+    <p><button onClick="calcMedia()">CALCULAR A MÉDIA </button></p>
+    
+    <div id="result" style="font-family:Verdana, Geneva, Tahoma, sans-serif;">
+
+    </div>
+
+    <script>
+
+        function calcMedia() {
+            
+            var valor1 = parseInt(document.getElementById("nota1").value);
+            var valor2 = parseInt(document.getElementById("nota2").value);         
+
+            let media = (valor1 + valor2) / 2;
+            console.log('MÉDIA: ' + media);
+
+                if (media >= 6){
+                    result.innerHTML = "PARABÉNS, VOCÊ FOI <strong>APROVADO<strong>"
+                } else if ( media < 6 && media >= 4){
+                    result.innerHTML = "INSERIR VALOR DA PROVA FINAL"
+                    provaFinal();
+                } else {
+                    result.innerHTML = "REPROVADO"
+                }
+        
+                function provaFinal() { //CALCULO PROVA FINAL
+
+                var valor3 = Number(prompt("Insira o valor da prova final:"));
+                console.log(valor3);
+
+                let mediaFinal = (media + valor3) / 2
+                console.log(mediaFinal);
+
+                if (mediaFinal >= 6) {
+                    result.innerHTML = "PARABÉNS, VOCÊ FOI <strong>APROVADO</strong>"
+                } else {
+                    result.innerHTML = "REPROVADO"
+                }
+
+                }
+        }
+
+    </script>
+
+</body>
+</html>

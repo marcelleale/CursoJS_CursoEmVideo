@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercício 1 - Aula 09</title>
+
+<style>
+    
+    body {
+        background: rgb(68,125,199);
+        color: white;
+        font: normal 18pt Arial;
+    }
+
+</style>
+
+</head>
+<body>
+    <!-- Árvore DOM (document object model)
+        Conjunto de objetos dentro do navegador que  concede acesso aos componentes internos do website; 
+    
+        window - Raíz;
+            location 
+
+            document 
+                html (pai de head e body)
+                    head | body; (filhos de html)
+                        meta | title (filhos de head)
+                                h1 | p | div (filhos de body)
+                                     strong (filho de p)
+
+            history - de onde você veio, pra onde você vai.
+-->
+
+
+
+    <h1>Iniciando os estudos DOM</h1>
+    <p>Aqui vai o resultado</p>
+    <p name="paragraph">Aprendendo a usar o <strong>DOM</strong> </p>
+    <div id="msg">Clique em mim.</div>
+
+    <script>
+    
+    window.document.write(window.document.charset);
+    window.document.write(window.navigator.appName);
+    window.document.write(window.document.URL);
+
+    /*
+    
+    5 formas de selecionar elementos do DOM:
+
+    -- Marca: getElementByTagName(); Consegue selecionar mais de 1 objeto, pois é possível que haja mais de 1 tag com o mesmo nome. Ex: <p>
+    -- ID: getElementById(); 
+    -- Nome: getElementsByName();
+    -- Classe: getElementsbyClassName();
+    -- Seletor: querySelector() ou querySelectorAll()
+
+    */
+
+        var p1 = window.document.getElementsByTagName('p')[1]; //[0] índice de posição do primeiro parágrado.
+        window.document.write("   Está escrito assim: " + p1.innerText);
+        p1.style.color = 'purple'; //mudança de estilo.
+        window.alert(p1.innerText); //pega apenas o texto;
+        window.alert(p1.innerHTML); //pega todas as formatações;
+
+        var d = window.document.getElementById('msg');
+        d.style.background = 'pink';
+        d.innerText = "Carregando..."
+
+        window.document.getElementById('msg').innerText = "Take a sad song and make it better";
+        var k = window.document.getElementsByName('paragraph')[0];
+        k.innerHTML = "Hey, Jude! Don't let me down...";
+
+        var f = window.document.querySelector('div#msg');
+        d.style.color = 'black';
+
+        
+    </script>
+    
+</body>
+</html>
+

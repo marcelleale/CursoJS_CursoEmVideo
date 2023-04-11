@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercício 1 - Aula 8</title>
+</head>
+<body>
+
+    <script>/* Operadores Relacionais 
+
+        5 > 2 = VERDADEIRO;
+        7 < 4 = FALSO;
+        8 >= 8 = TRUE;
+        9 <= 7 = FALSE;
+        5 == 5 = TRUE; = recebe // == igual
+        4 != 4 = FALSE; != diferente ou não verdadeiro
+
+    */
+   
+        let comp = 5 > 2
+        console.log(comp); //TRUE
+
+        let comp1 = 8 < 4
+        console.log(comp1); // FALSE
+
+        let a = 8;
+        let b = 15;
+
+        let comp2 = a > b
+        console.log(comp2); //FALSE
+
+        let comp3 = a < b
+        console.log(comp3); // TRUE
+
+        let comp4 = a <= b - 10
+        console.log(comp4); // b - 10 = 5; 8 <= 5 FALSE
+
+        let comp5 = a != b
+        console.log(comp5); //TRUE
+
+        /* Operadores de Identidade
+
+            5 == 5 = TRUE;
+            5 == '5' = TRUE O JavaScript não compara os tipos de dados mas a grandeza entre as igualdades.
+            5 === '5' = FALSE O operador de IDENTIDADE vê se a comparação é idêntica. 
+            5 === 5 = TRUE
+        */
+
+        let teste = 5 == 5
+        console.log(teste); //TRUE
+
+        let teste1 = 5 == '5'
+        console.log(teste1); //TRUE
+
+        let teste2 = 5 === 5
+        console.log(teste2); //TRUE 
+
+        let teste3 = 5 === '5'
+        console.log(teste3); //FALSE
+
+        /* Operadores Lógicos 
+        
+        ! = negação Só tem 1 operando 
+                        true -> false
+                        false -> true
+
+        && = conjunção lógica
+        || = disjunção lógica
+        
+        */
+
+        let m = 5;
+        let n = 8;
+
+       let result = a > b && b % 2 == 0
+       console.log(result); //FALSE
+
+       let result1 = a <= b || b / 2
+       console.log(result1);
+
+       /* 
+       
+       Segue-se a ordem de precedência para achar os resultados.
+            Entre os operadores lógicos, a precedência é:
+            
+            | !, 
+            | &&, 
+            | || 
+            v 
+            
+        */
+
+        /* Operador Ternário
+            (tem 3 operandos)
+
+            teste ? true : false
+            uma condição - o que acontece se verdadeiro - o que acontece se falso
+
+            Ex:
+
+            var media = 5.5
+            media > 7 ? "APROVADO" : "REPROVADO"
+            
+            O operador ternário é sempre o último a ser feito dentro da precedência.
+        */
+
+        var media = 5.5;
+        var resultadoTernario = media > 7 ? "APROVADO" : "REPROVADO";
+        console.log(resultadoTernario);
+
+        var x = 8;
+        var resultadoTernario1 = x % 2 == 0 ? 5 : 9;
+        console.log(resultadoTernario1);
+
+        var idade = 19;
+        var resultadoTernario2 = idade >= 18 ? "MAIOR" : "MENOR"
+        console.log(resultadoTernario2);
+
+        var opcao = 'branco';
+        var resultadoTernario2 = opcao == 'branco' ? "DESCULPE, ESSA OPÇÃO ACABOU" : "OBA, PRODUTO NO CARRINHO";
+        console.log(resultadoTernario2);
+        
+    </script>
+    
+</body>
+</html>
+
+

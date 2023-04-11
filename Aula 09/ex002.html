@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exerício 2 - Aula 10</title>
+
+    <style>
+        div#area {
+            font: normal 20pt Arial;
+            background: rgb(42, 139, 42);
+            color: white;
+            width: 200px;
+            height: 200px;
+            line-height:200px;
+            text-align: center;
+        }
+
+        div#area1 {
+            font: normal 20pt Arial;
+            background: rgb(90, 18, 156);
+            color: white;
+            width: 200px;
+            height: 200px;
+            line-height:200px;
+            text-align: center;
+        }
+    </style>
+
+</head>
+<body>
+    <div id="area" onclick="clicar()" onmouseenter="entrar()" onmouseout="sair()">
+        Interaja...
+    </div>    
+
+    <div id="area1">
+        Interaja...
+    </div>
+
+    <script>
+        // Evento é tudo aquilo que pode acontecer com determinado elemento do DOM.
+        
+        /*
+
+        Alguns eventos de mouse:
+
+        mouseenter
+        mousemove
+        mousedown
+        mouseup
+        click 
+        mouseout
+    */
+
+    /*Estrutura das Funções:
+    
+        function Ação(parêmetro) {
+        bloco 
+        }
+    
+    */
+
+        function clicar(){
+            var a = document.getElementById('area');
+            a.innerText = 'Clicou!';
+            a.style.background = 'red';
+        }
+
+        function entrar(){
+            var a = document.getElementById('area');
+            a.innerText = 'Entrou!';
+        }
+
+        function sair(){
+            var a = document.getElementById('area');
+            a.innerText = 'Saiu!';
+            a.style.background = 'green'
+        }
+// -----------------------------------------------------------------
+    // Outra forma de fazer utilizando addEventListener
+
+        let b = document.getElementById('area1');
+
+
+        b.addEventListener('click', clicar1);
+        b.addEventListener('mouseenter', entrar1);
+        b.addEventListener('mouseout', sair1);
+
+        function clicar1(){
+            b.innerText = 'Clicou!';
+            b.style.background = 'rgb(156, 18, 99)';
+        }
+
+        function entrar1(){
+            b.innerText = 'Entrou!';
+
+        }
+
+        function sair1(){
+            b.innerText = 'Saiu!';
+            b.style.background = 'rgb(90, 18, 156)';
+        }
+
+    
+    </script>
+</body>
+</html>

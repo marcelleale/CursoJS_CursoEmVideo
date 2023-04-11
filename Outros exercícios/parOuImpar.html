@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>É PAR ou ÍMPAR?</title>
+    <style>
+        .botao {
+
+            height: 70px;
+            margin-bottom: 30px;
+        }
+    </style>
+</head>
+<body>
+
+    <h1> É PAR ou ÍMPAR?</h1>
+
+    <button id="btnNum" class="botao" onclick="parImpar()"> Clique para começar </button>
+
+    <div id="result">
+        O resultado vai aparecer aqui...
+
+    </div>
+
+    <script>
+
+        function parImpar(){
+            var cliqueBotao = Number(prompt('Insira um número:'));
+            console.log(cliqueBotao)
+
+           var resultado = document.getElementById('result');
+
+                if (cliqueBotao % 2 == 0){
+                    // alert("O número é par.")
+                    resultado.innerHTML = `O número ${cliqueBotao} que foi digitado é <strong>PAR</strong>`;
+                } else {
+                    // alert("O número é impar.")
+                    resultado.innerHTML = "`O número ${cliqueBotao} que foi digitado é <strong>ÍMPAR</strong>";
+                }
+            
+        }
+    </script>
+    
+</body>
+</html>

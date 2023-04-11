@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Manipulando números</title>
+</head>
+<body>
+    <h1>Trabalhando com números</h1>
+
+    <button onclick="calcular()"> Clique para calcular </button>
+    <br><br>
+
+    <p id="resultado">
+        O resultado aparecerá aqui.
+    </p>
+
+    <script>
+
+        alert("Olá, seja bem-vindo(a) ao meu site");
+
+        function calcular(){
+        let num1 = prompt("Insira o primeiro número");
+
+        let dobro = num1 * 2;
+        let metade = num1 / 2;
+        
+        let resposta = document.getElementById('resultado');
+            resposta.innerHTML = "O dobro de " + num1 + " é " + dobro + " e a metade é " + metade + ".";
+        }
+
+        
+    </script>
+</body>
+</html>

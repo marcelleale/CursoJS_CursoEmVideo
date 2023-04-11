@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercício 5 - Aula 12</title>
+</head>
+<body>
+
+
+    <script>
+
+        // CONDIÇÕES ANINHADAS
+        
+        // if(){
+
+        // } else {
+        //     if (){
+
+        //     } else {
+
+        //     }
+        // }
+
+        var idade = 16
+
+        if (idade < 16){
+            console.log("Não Vota");
+
+        } else {
+
+            if(idade >= 16 && idade < 18){
+                console.log("Voto Opcional")
+
+            } else {
+                console.log("Voto Obrigatório");
+
+            }
+        }
+
+        //OU
+
+        var idade1 = 65
+
+        if (idade1 < 16){
+            console.log("Não Vota");
+
+        } else if (idade1 < 18 || idade1 >= 65){
+                console.log("Voto Opcional");
+
+            } else {
+                console.log("Voto Obrigatório");
+        } 
+        
+
+
+    </script>
+    
+</body>
+</html>

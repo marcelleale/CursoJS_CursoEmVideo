@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>COR DE FUNDO</title>
+
+    <style>
+        .color-night {
+
+            color:aliceblue;
+        }
+
+        .tam {
+            font-size: 40px;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+    </style>
+
+</head>
+<body id="body">
+
+    <div id="imagem">
+
+    </div>
+
+    <script id="morning" src="imagem/morning.jpg"></script>
+
+    <script>
+       
+       var agora = new Date();
+       var hora = agora.getHours();
+        // var hora = 5;
+       console.log(hora);
+
+       if (hora >= 6 && hora <= 11) {
+            document.body.style.backgroundColor = 'yellow';
+            body.innerHTML = '<span class="tam">Bom dia!</span>';
+           
+           function myFunction() {
+            var morning = document.getElementById('morning').src;
+           document.getelementById('imagem').innerHTML = morning;
+           }
+
+
+       } else if (hora >=12 && hora <=17){
+            document.body.style.backgroundColor = 'orange';
+            body.innerHTML = '<span class="tam">Boa tarde!'
+
+       } else if (hora >=18 && hora <= 24) {
+            document.body.style.backgroundColor = 'darkblue';
+            body.innerHTML = '<span class="tam color-night">Boa noite!'
+
+       } else if (hora >= 1) {
+            document.body.style.backgroundColor = 'lightblue';
+            body.innerHTML = '<span class="tam">Bom dia!'
+       }
+    </script>
+    
+
+</body>
+</html>

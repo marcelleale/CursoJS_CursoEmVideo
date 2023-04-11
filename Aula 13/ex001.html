@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aula 13 - Laços</title>
+</head>
+<body>
+
+    <script>
+        
+        //WHILE
+
+        /*
+            ENQUANTO A CONDIÇÃO FOR VERDADEIRA, O COMANDO SERÁ EXECUTADO. 
+            QUANDO A CONDIÇÃO FOR FALSA, O LAÇO É QUEBRADO E SAI DO LOOP.
+
+            while(temFatia()) {
+
+                comerFatia();
+            }
+        */
+            //ESTRUTURA DE REPETIÇÃO COM TESTE LÓGICO NO INÍCIO
+            var contador = 1;
+
+            while (contador <= 5){
+                console.log(`Passo ${contador}`);
+                contador++
+            }
+
+            //ESTRUTURA DE REPETIÇÃO COM TESTE LÓGICO NO FINAL
+
+            var cont = 1;
+
+            do {
+                console.log(`Step ${cont}`); 
+                cont++;
+
+            } while (cont <= 3)
+
+        //FOR
+
+        /*
+            for(inicio; teste; incremento){
+                bloco de instruções;
+            }
+        
+            var cont = 1;
+
+            for (cont=1; c<=10, cont++){
+
+            }
+        */
+
+        var c = 1;
+            console.log("VAI COMEÇAR");
+        for( c=1; c <= 3; c++ ){
+            console.log(c);
+        }
+            console.log("FIM");
+    
+    </script>
+
+</body>
+</html>
